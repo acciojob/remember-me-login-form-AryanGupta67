@@ -1,4 +1,3 @@
-// Wait for DOM to load
 window.addEventListener('DOMContentLoaded', () => {
   const usernameInput = document.getElementById('username');
   const passwordInput = document.getElementById('password');
@@ -7,7 +6,6 @@ window.addEventListener('DOMContentLoaded', () => {
   const existingBtn = document.getElementById('existing');
   const form = document.getElementById('loginForm');
 
-  // Check if credentials exist in localStorage
   const savedUsername = localStorage.getItem('username');
   const savedPassword = localStorage.getItem('password');
 
@@ -44,4 +42,5 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
 
